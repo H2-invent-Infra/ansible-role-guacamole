@@ -10,7 +10,7 @@ guacamole_client_package: "{{ 'guacamole-' + guacamole_version + '.war' }}"
 
 guacamole_dl_url: "{{ 'http://apache.org/dyn/closer.cgi?action=download&filename=guacamole/' + guacamole_version }}"
 
-guacamole_server_hostname: localhost
+guacamole_server_hostname: 127.0.0.1
 
 # Authentication LDAP
 guacamole_auth_ldap_package: "{{ 'guacamole-auth-ldap-' + guacamole_version + '.tar.gz' }}"
@@ -19,7 +19,7 @@ guacamole_auth_ldap_package: "{{ 'guacamole-auth-ldap-' + guacamole_version + '.
 guacamole_auth_totp_package: "{{ 'guacamole-auth-totp-' + guacamole_version + '.tar.gz' }}"
 
 # Authentication OpenID
-guacamole_auth_openid_package: "{{ 'guacamole-auth-openid-' + guacamole_version + '.tar.gz' }}"
+guacamole_auth_openid_package: "{{ 'guacamole-auth-sso-' + guacamole_version + '.tar.gz' }}"
 
 guacamole_openid_auth: false
 
@@ -110,4 +110,4 @@ guacamole_users: []
 #       password: password
 # Define version to install
 # 0.9.13-incubating | 0.9.14 | 1.0.0 | 1.1.0
-guacamole_version: 1.1.0
+guacamole_version: 1.5.4
